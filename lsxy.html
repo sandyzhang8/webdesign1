@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lsxy</title>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	left: 17%;
+	top: 400px;
+	width: 1003px;
+	height: 250px;
+	z-index: 1;
+}
+#apDiv2 {
+	position: absolute;
+	left: 20px;
+	top: 40px;
+	width: 165px;
+	height: 40px;
+	z-index: 2;
+}
+#apDiv3 {
+	position: absolute;
+	left: 12px;
+	top: 700px;
+	width: 100%;
+	height: 24px;
+	z-index: 3;
+}
+#apDiv4 {
+	position: absolute;
+	left: 116px;
+	top: 848px;
+	width: 451px;
+	height: 253px;
+	z-index: 4;
+}
+#apDiv5 {
+	position: absolute;
+	width: 800px;
+	height: 400px;
+	z-index: 4;
+	top:850px;
+}
+#apDiv6 {
+	position: absolute;
+	width: 800px;
+	height: 400px;
+	z-index: 5;
+	top:850px;
+	
+}
+#apDiv7 {
+	position: absolute;
+	width: 800px;
+	height: 400px;
+	z-index: 6;
+	top:850px;
+}
+#apDiv8 {
+	position: absolute;
+	left: 47%;
+	top: 1255px;
+	width: 73px;
+	height: 57px;
+	z-index: 7;
+}
+#apDiv9 {
+	position: absolute;
+	left: 0px;
+	top: 2500px;
+	width: 100%;
+	height: 140px;
+	z-index: 8;
+}
+#apDiv10 {
+	position: absolute;
+	left: 0px;
+	top: 1355px;
+	width: 100%;
+	height: 103px;
+	z-index: 9;
+}
+#apDiv11 {
+	position: absolute;
+	left: 0px;
+	top: 1319px;
+	width: 100%;
+	height: 27px;
+	z-index: 10;
+}
+#apDiv12 {
+	position: absolute;
+	left: 15%;
+	top: 1499px;
+	width: 495px;
+	height: 363px;
+	z-index: 11;
+}
+#apDiv13 {
+	position: absolute;
+	left: 15%;
+	top: 1572px;
+	width: 222px;
+	height: 52px;
+	z-index: 12;
+}
+#apDiv14 {
+	position: absolute;
+	left: 60%;
+	top: 1620px;
+	width: 380px;
+	height: 550px;
+	z-index: 13;
+}
+#apDiv15 {
+	position: absolute;
+	left: 59%;
+	top: 2200px;
+	width: 400px;
+	height: 300px;
+	z-index: 14;
+}
+.aa ul {
+   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 10px;
+  height: 80%;
+  width: 100px;
+  right: 5%;
+
+   z-index: 9999;
+}
+.aa li {
+  float: center;
+}
+
+.aa li a, .dropbtn {
+  display: inline-block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.aa li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:darkred;}
+
+.dropdown:hover .dropdown-content {
+  display: block;}
+#goToTop { position: fixed; bottom: 10px; right: 5%; z-index: 9999;}
+#goToTop a {
+ border: 1px solid #CCCCCC;
+ background-color:#ff0000 ;
+ color: white;
+ font-size: 16px;
+ padding: 5px;
+ text-decoration: none; }
+  #entirety{
+  width: 1003px;
+  margin: 0 auto;
+ }
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+  <script>
+    $(function(){
+        $('#goToTop a').click(function(){
+            $('html , body').animate({scrollTop: 0},'fast');
+        });
+    });
+    </script>
+</head>
+
+<body>
+	<div id="entirety">
+	<div class="aa">
+		<ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">导航栏</a>
+    <div class="dropdown-content">
+      <a href="index.html">首页</a>
+			<a href="lsxy.html">绿色校园</a>
+			<a href="sjx.html">党的历史</a>
+			<a href="20.html">党的二十大</a>
+			<a href="party.html">党章</a>
+			<a href="movie.html">红色电影</a>
+			<a href="theory.html">思想理论</a>
+			<a href="excellent.html">优秀典范</a>
+    </div>
+  </li>
+</ul></div>
+	<div id="goToTop"><a href="javascript:;">回顶部</a></div>
+<div id="apDiv1" style="background-color: #84BA83;">
+  <table width=100% height=100% border="0">
+    <tr>
+      <th width=64% height=100% style="text-align: center; color: #FFF; font-family:'等线'; padding:20px;"  scope="col"><p style="font-weight: bold; font-family: '微软雅黑'; letter-spacing: 1ex; font-size: 18px;">什么是绿色校园？</p>
+      <p letter-spacing: 0.8ex;>绿色校园是1996年《全国环境宣传教育行动纲要》中首次提出的。&ldquo;绿色校园&rdquo;是指在实现其基本教育功能的基础上，以可持续发展思想为指导，在学校全面的日常管理工作中纳入有益于环境的管理措施，并持续不断地改进，充分利用学校内外的一切资源和机会全面提高师生环境素养的学校。</p></th>
+      <th width=36% height=100% scope="col" ><img src="img/3e7ba5b19f1cbc3fdcb6e0be529bf7ad.jpeg" width=200px height=160px></th>
+    </tr>
+  </table>
+</div>
+<div id="apDiv2" align="center"><a href="index.html" style="font-size: 20px">&laquo; 回到首页</a></div>
+
+
+<div id="apDiv8" align="center">
+  <form name="form1" method="post">
+    <input name="radio" type="radio" id="radio2" onClick="MM_showHideLayers('apDiv5','','show','apDiv6','','hide','apDiv7','','hide')" value="radio">
+    <label for="radio"></label>
+    <input name="radio" type="radio" id="radio3" onClick="MM_showHideLayers('apDiv5','','hide','apDiv6','','show','apDiv7','','hide')" value="radio">
+    <label for="radio"></label>
+<input name="radio" type="radio" id="radio" onClick="MM_showHideLayers('apDiv5','','hide','apDiv6','','hide','apDiv7','','show')" value="radio">
+    <label for="radio"></label>
+  </form>
+</div>
+<div><img src="img/未标题-1.jpg" width=100% height=100%></div>
+<div style="padding:10px; margin-top:20px; margin-bottom:20px;background-color:#E7FAB6; width:98%; height:100%;"></div>
+<div id="apDiv3" align="center">
+  <p style="font-family: '华文楷体'; font-size: 30px; width: 100%; height: 100%; text-align: center;">-学 校 环 境-</p>
+  <p style="font-family: '华文楷体'; font-size: 16px; width: 100%; height: 100%; text-align: center;">The School Environment</p>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="800" border="0" align="center">
+  <tr>
+    <th scope="col"><div id="apDiv5"><img src="img/10db6903909082ed71413d4321385cf4.jpg" width=100% height=100%></div>
+    <div id="apDiv6"><img src="img/l-01.jpg" width=100% height=100%></div>
+    <div id="apDiv7"><img src="img/l-04.jpg" width=100% height=100%></div></th>
+  </tr>
+</table>
+<div id="apDiv11">
+  <hr>
+</div>
+<div id="apDiv10" align="center">
+  <p style="font-family: '华文楷体'; font-size: 30px; text-align: center;">-绿 色 建 设-</p>
+  <p style="font-family: '华文楷体'; text-align: center; font-size: 16px;">Green&nbsp;Campus&nbsp;Construction
+  </p>
+</div>
+<div id="apDiv12">
+  <p><img src="img/未标题-2.png" width="150" height="150"></p>
+  <table width=100% height=100% border="0">
+    <tr>
+      <th width="253" height="182" scope="col"><img src="img/QQ图片20220326194457.png" width=100% height=79%></th>
+      <th width="237" style="text-align: center; font-family: '华文楷体'; font-size: 20px;" scope="col"><p><a href="https://mp.weixin.qq.com/s/Z8lCGoqMWD6nf6nf4Hknig">节约用水，不只是今天！</a></p>
+      <p><span style="font-size: 16px; font-family: '幼圆';">水无本必枯，水无源必竭</span><br>
+      </p></th>
+    </tr>
+    <tr>
+      <td><img src="img/QQ图片20220326195412.jpg" width=101% height=39%></td>
+      <td><p style="font-family: '华文楷体'; font-size: 20px; text-align: center; font-weight: bold;"><a href="https://mp.weixin.qq.com/s/oP9fapRoj0yvndLBtusITQ">身“林”其境 &nbsp;培正春日</a></p>
+      <p style="text-align: center; font-size: 16px; font-family: '幼圆';">绿水青山&nbsp; “森森”不息</p></td>
+    </tr>
+    <tr>
+      <td><img src="img/QQ图片20220326200051.jpg" width=100% height=43%></td>
+      <td><p style="text-align: center; font-weight: bold; font-family: '华文楷体'; font-size: 20px;"><a href="https://mp.weixin.qq.com/s/UgVVh8RaCk0A45le4PKRTw">绿意满园 春在培正</a></p>
+      <p style="text-align: center; font-size: 16px; font-family: '幼圆';">多一份绿色 多一份温暖</p></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</div>
+<div id="apDiv13" style="font-weight: bold; text-align: center; font-family: '华文楷体'; font-size: 30px;">相关推文</div>
+<div id="apDiv14"><img src="img/l-06.jpg" width=100% height=100%></div>
+<div align="center" id="apDiv15" style="font-family: '华文楷体'; text-align: center; font-size: 18px;">党的十八大以来,我国坚持“五位一体”总体布局,生态文明建设步入“快车道”。如今,由习近平主席提出的“绿水青山就是金山银山”发展理念,已经成为全社会共识,如今党的二十大即将召开，让我们紧跟党的步伐，树立和践行绿水青山就是金山银山的理念，坚持节约资源和保护环境的基本国策，共同建设绿色校园。
+</div>
+<div id="apDiv9" style="background-color: #B3DA92; text-align: center;  font-family: '华文楷体'; ">
+  <p style="font-size: 30px;">绿水青山就是金山银山
+  <br>-Lucid&nbsp;waters&nbsp;and&nbsp;lush&nbsp;mountains&nbsp;are&nbsp;invaluable&nbsp;assets-
+  </p>
+</div>
+</div>
+</body>
+</html>

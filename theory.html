@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>theory</title>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+	.aa ul {
+   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 10px;
+  height: 80%;
+  width: 100px;
+  right: 5%;
+   z-index: 9999;
+}
+.aa li {
+  float: center;
+}
+
+.aa li a, .dropbtn {
+  display: inline-block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.aa li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:darkred;}
+
+.dropdown:hover .dropdown-content {
+  display: block;}
+</style>
+	<link rel="stylesheet" type="text/css" media="all" href="css/theory.css">
+	<script type="text/javascript">
+			$(document).ready(function(){
+				var time=setInterval(function(){
+					ck("right");
+				},3000);
+				function ck(fg){
+				var index;
+				for(var i=0;i<$(".list1 li").length;i++){
+				if($(".list1 li").eq(i).hasClass("current1")){
+					index=i;
+					$(".list1 li").eq(i).removeClass("current1");
+					$(".imgs1 img").eq(i).removeClass("fir");
+				}
+				}
+				if(fg=="left"){
+					if(index>=1){
+						index--;
+					}else{
+						index=$(".list1 li").length-1;
+					}
+					}else{
+					if(index<$(".list1 li").length-1){
+						index++;
+					}else{
+						index=0;
+					}
+					}
+					$(".list1 li").eq(index).addClass("current1");
+					$(".imgs1 img").eq(index).addClass("fir");
+				}
+			
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var time=setInterval(function(){
+					ck("right");
+				},3000);
+				function ck(fg){
+				var index;
+				for(var i=0;i<$(".list2 li").length;i++){
+				if($(".list2 li").eq(i).hasClass("current2")){
+					index=i;
+					$(".list2 li").eq(i).removeClass("current2");
+					$(".imgs2 img").eq(i).removeClass("fir");
+				}
+				}
+				if(fg=="left"){
+					if(index>=1){
+						index--;
+					}else{
+						index=$(".list2 li").length-1;
+					}
+					}else{
+					if(index<$(".list2 li").length-1){
+						index++;
+					}else{
+						index=0;
+					}
+					}
+					$(".list2 li").eq(index).addClass("current2");
+					$(".imgs2 img").eq(index).addClass("fir");
+				}
+			
+			});
+		</script>
+				<script type="text/javascript">
+			$(document).ready(function(){
+				var time=setInterval(function(){
+					ck("right");
+				},3000);
+				function ck(fg){
+				var index;
+				for(var i=0;i<$(".list4 li").length;i++){
+				if($(".list4 li").eq(i).hasClass("current4")){
+					index=i;
+					$(".list4 li").eq(i).removeClass("current4");
+					$(".imgs4 img").eq(i).removeClass("fir");
+				}
+				}
+				if(fg=="left"){
+					if(index>=1){
+						index--;
+					}else{
+						index=$(".list4 li").length-1;
+					}
+					}else{
+					if(index<$(".list4 li").length-1){
+						index++;
+					}else{
+						index=0;
+					}
+					}
+					$(".list4 li").eq(index).addClass("current4");
+					$(".imgs4 img").eq(index).addClass("fir");
+				}
+			
+			});
+		</script>
+				<script type="text/javascript">
+			$(document).ready(function(){
+				var time=setInterval(function(){
+					ck("right");
+				},3000);
+				function ck(fg){
+				var index;
+				for(var i=0;i<$(".list6 li").length;i++){
+				if($(".list6 li").eq(i).hasClass("current6")){
+					index=i;
+					$(".list6 li").eq(i).removeClass("current6");
+					$(".imgs6 img").eq(i).removeClass("fir");
+				}
+				}
+				if(fg=="left"){
+					if(index>=1){
+						index--;
+					}else{
+						index=$(".list6 li").length-1;
+					}
+					}else{
+					if(index<$(".list6 li").length-1){
+						index++;
+					}else{
+						index=0;
+					}
+					}
+					$(".list6 li").eq(index).addClass("current6");
+					$(".imgs6 img").eq(index).addClass("fir");
+				}
+			
+			});
+		</script>
+		<script>
+    $(function(){
+        $('#goToTop a').click(function(){
+            $('html , body').animate({scrollTop: 0},'fast');
+        });
+    });
+    </script>
+</head>
+<body>
+<div class="entirety">
+<div id="goToTop"><a href="javascript:;">回顶部</a></div>	
+<div class="aa">
+		<ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">导航栏</a>
+    <div class="dropdown-content">
+      <a href="index.html">首页</a>
+			<a href="lsxy.html">绿色校园</a>
+			<a href="sjx.html">党的历史</a>
+			<a href="20.html">党的二十大</a>
+			<a href="party.html">党章</a>
+			<a href="movie.html">红色电影</a>
+			<a href="theory.html">思想理论</a>
+			<a href="excellent.html">优秀典范</a>
+    </div>
+  </li>
+</ul></div>
+<div class="top">
+	<h1><font color="white">思想理论</font></h1>
+</div>
+<div id="goToIndex"><a href="index.html">回到首页</a></div>
+<div class="guide">
+	<ul>
+	<h1><font color="red">党的指导思想</font></h1>
+	<li><a href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E5%88%97%E5%AE%81%E4%B8%BB%E4%B9%89/9153690?fr=aladdin" target="_blank">马克思列宁主义</a></li>
+	<li><a href="https://baike.baidu.com/item/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3/385875?fr=aladdin" target="_blank">毛泽东思想</a></li>
+	<li><a href="https://baike.baidu.com/item/%E9%82%93%E5%B0%8F%E5%B9%B3%E7%90%86%E8%AE%BA/1478104" target="_blank">邓小平理论</a></li>
+	<li><a href="https://baike.baidu.com/item/%E2%80%9C%E4%B8%89%E4%B8%AA%E4%BB%A3%E8%A1%A8%E2%80%9D%E9%87%8D%E8%A6%81%E6%80%9D%E6%83%B3/2523227" target="_blank">"三个代表"重要思想</a></li>
+	<li><a href="https://baike.baidu.com/item/%E7%A7%91%E5%AD%A6%E5%8F%91%E5%B1%95%E8%A7%82/317422" target="_blank">科学发展观</a></li>
+	<li><a href="https://baike.baidu.com/item/%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%96%B0%E6%97%B6%E4%BB%A3%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E6%80%9D%E6%83%B3" target="_blank">习近平新时代中国特色社会主义思想</a></li>
+</ul>
+</div>
+
+<div class="dang">
+	<ul>
+	<h1><font color="red">党和国家领导人著作</font></h1>
+	<li>
+		<img src="images/theory1.jpg">
+		<p><font color="black">毛泽东著作</font></p>
+	</li>
+	<li>
+		<img src="images/theory2.jpg">
+		<p><font color="black">邓小平著作</font></p>
+	</li>
+	<li>
+		<img src="images/theory3.jpg">
+		<p><font color="black">江泽民著作</font></p>
+	</li>
+	<li>
+		<img src="images/theory4.jpg">
+		<p><font color="black">胡锦涛著作</font></p>
+	</li>
+	<li>
+		<img src="images/theory5.jpg">
+		<p><font color="black">习近平著作</font></p>
+	</li>
+</ul>
+</div>
+
+<div class="zhuzuo1">
+	<ul>
+		<li><a href="https://preview-pdf.xuexi.cn/preview/index.html?url=https%3A%2F%2Fpreview-pdf.xuexi.cn%2F5c248efa5947162fdbe73c8e%2Fqcm9yllzbj.pdf&copy=1" target="_blank">《毛泽东选集（第一卷）》</a></li>
+		<li><a href="https://preview-pdf.xuexi.cn/preview/index.html?url=https%3A%2F%2Fpreview-pdf.xuexi.cn%2F5c248f6fdecb054764fc5608%2Fctv3jbue08o.pdf&copy=1" target="_blank">《毛泽东选集（第二卷）》</a></li>
+		<li><a href="https://preview-pdf.xuexi.cn/preview/index.html?url=https%3A%2F%2Fpreview-pdf.xuexi.cn%2F5c24901bcafbdf0c9ca389aa%2F0qcowsxygkl.pdf&copy=1" target="_blank">《毛泽东选集（第三卷）》</a></li>
+		<li><a href="https://preview-pdf.xuexi.cn/preview/index.html?url=https%3A%2F%2Fpreview-pdf.xuexi.cn%2F5c2490a62cbde90fad76e9ba%2Ftkxt55zg6xt.pdf&copy=1" target="_blank">《毛泽东选集（第四卷）》</a></li>
+		<li><a href="http://data.lilun.cn/html/seniorSearch.html" target="_blank">　>>>更多</a></li>
+	</ul>
+</div>
+
+<div class="zhuzuo2">
+	<ul>
+		<li><a href="https://article.xuexi.cn/articles/pdf/index.html?art_id=1661705021281972768" target="_blank">《邓小平文选（第一卷）》</a></li>
+		<li><a href="https://article.xuexi.cn/articles/pdf/index.html?art_id=1477373791953051286" target="_blank">《邓小平文选（第二卷）》</a></li>
+		<li><a href="https://article.xuexi.cn/articles/pdf/index.html?art_id=14235655109833701927" target="_blank">《邓小平文选（第三卷）》</a></li>
+		<li><a href="http://data.lilun.cn/html/seniorSearch.html" target="_blank">　>>>更多</a></li>
+	</ul>
+</div>
+
+<div class="zhuzuo3">
+	<ul>
+		<li><a href="https://article.xuexi.cn/articles/pdf/index.html?art_id=9391585005875432173" target="_blank">《江泽民文选（第一卷）》</a></li>
+		<li><a href="https://article.xuexi.cn/articles/pdf/index.html?art_id=11025286309904138668" target="_blank">《江泽民文选（第二卷）》</a></li>
+		<li><a href="https://article.xuexi.cn/articles/pdf/index.html?art_id=494762266751690811" target="_blank">《江泽民文选（第三卷）》</a></li>
+		<li><a href="http://data.lilun.cn/html/seniorSearch.html" target="_blank">　>>>更多</a></li>
+	</ul>
+</div>
+
+<div class="zhuzuo4">
+	<ul>
+		<li><a href="https://article.xuexi.cn/articles/pdf/index.html?art_id=16195920626785408612" target="_blank">《胡锦涛文选（第一卷）》</a></li>
+		<li><a href="https://article.xuexi.cn/articles/pdf/index.html?art_id=1311099959947889899" target="_blank">《胡锦涛文选（第二卷）》</a></li>
+		<li><a href="https://article.xuexi.cn/articles/pdf/index.html?art_id=5350089037015694605" target="_blank">《胡锦涛文选（第三卷）》</a></li>
+		<li><a href="http://data.lilun.cn/html/seniorSearch.html" target="_blank">　>>>更多</a></li>
+	</ul>
+</div>
+
+<div class="zhuzuo5">
+	<ul>
+		<li><a href="https://www.12371.cn/special/blqs/xjptzglz/" target="_blank">《习近平谈治国理政（第一卷）》</a></li>
+		<li><a href="https://www.12371.cn/special/zglz2/" target="_blank">《习近平谈治国理政（第二卷）》</a></li>
+		<li><a href="https://www.12371.cn/special/zglz3/" target="_blank">《习近平谈治国理政（第三卷）》</a></li>
+		<li><a href="http://data.lilun.cn/html/seniorSearch.html" target="_blank">　>>>更多</a></li>
+	</ul>
+</div>
+
+<div class="lun1">
+		<div class="list1">
+		<ul>
+		<li class="current1"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		</ul>
+	</div>
+			<div class="imgs1">
+				<li>
+                	<img src="images/zhidao1.jpg" alt="" class="fir">	
+                </li>
+				<li>
+                    <img src="images/zhidao2.jpg" alt="">
+                </li>
+				 <li>
+                     <img src="images/zhidao3.jpg" alt="">
+                 </li>
+                 <li>
+                     <img src="images/zhidao4.jpg" alt="">
+                 </li>
+                 <li>
+                     <img src="images/zhidao5.jpg" alt="">
+                 </li>
+			</div>
+</div>
+
+<div class="lun2">
+		<div class="list2">
+		<ul>
+		<li class="current2"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		</ul>
+	</div>
+			<div class="imgs2">
+				<li>
+                	<img src="images/mao1.jpg" alt="" class="fir">	
+                </li>
+				<li>
+                    <img src="images/mao2.jpg" alt="">
+                </li>
+				 <li>
+                     <img src="images/mao3.jpg" alt="">
+                 </li>
+                 <li>
+                     <img src="images/mao4.jpg" alt="">
+                 </li>
+			</div>
+</div>
+<div class="deng3">
+	<li><img src="images/deng1.jpg"></li>
+</div>
+
+<div class="lun4">
+		<div class="list4">
+		<ul>
+		<li class="current4"></li>
+		<li></li>
+		<li></li>
+		</ul>
+	</div>
+			<div class="imgs4">
+				<li>
+                	<img src="images/jiang1.jpg" alt="" class="fir">	
+                </li>
+				<li>
+                    <img src="images/jiang2.jpg" alt="">
+                </li>
+				 <li>
+                     <img src="images/jiang3.jpg" alt="">
+                 </li>
+			</div>
+</div>
+
+<div class="hu5">
+	<li><img src="images/hu.jpg"></li>
+</div>
+
+<div class="lun6">
+		<div class="list6">
+		<ul>
+		<li class="current6"></li>
+		<li></li>
+		<li></li>
+		</ul>
+	</div>
+			<div class="imgs6">
+				<li>
+                	<img src="images/xi1.jpg" alt="" class="fir">	
+                </li>
+				<li>
+                    <img src="images/xi2.jpg" alt="">
+                </li>
+				 <li>
+                     <img src="images/xi3.jpg" alt="">
+                 </li>
+			</div>
+</div>
+
+<div class="classics">
+	<ul>
+	<h1><font color="red">经典著作</font></h1>
+</ul>
+</div>
+
+<div class="line"></div>
+
+<div class="jingdian">
+	<ul>
+		<li><a href="https://news.12371.cn/2018/04/24/ARTI1524553638408468.shtml" target="_blank">《共产党宣言》</a>
+		</li>
+		<li><a href="https://baike.baidu.com/item/%E5%88%97%E5%AE%81%E4%B8%8E%E3%80%8A%E5%9B%BD%E5%AE%B6%E4%B8%8E%E9%9D%A9%E5%91%BD%E3%80%8B/12047550?fr=aladdin" target="_blank">《国家与革命》</a>
+		</li>
+	</ul>
+</div>
+
+<div class="footer">
+  <div class="i1">
+  	<li>
+  		<img src="images/pz.jpg">
+  	</li>
+  </div>
+  <div class="X2"> <li>
+  	<li><span>关于我们</span>
+  	<span>|</span>
+  	<span>联系我们</span>
+  	<span>|</span>
+  <span>素材来源于网络</span></li>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

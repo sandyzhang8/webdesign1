@@ -1,0 +1,292 @@
+*{
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+}
+ul{
+  list-style-type: none;
+}
+/*entirety*/
+.entirety{
+  width: 1003px;
+  margin: 0 auto;
+}
+/*回到首页*/
+#goToIndex { bottom: 30px;padding-top: 20px; }
+#goToIndex a {
+ border: 1px solid #CCCCCC;
+ background-color:#ff0000 ;
+ color: white;
+ font-size: 16px;
+ padding: 5px;
+ text-decoration: none; }
+/*回到头部*/
+#goToTop { position: fixed; bottom: 10px; right: 10%;z-index: 9999; }
+#goToTop a {
+ border: 1px solid #CCCCCC;
+ background-color:#ff0000 ;
+ color: white;
+ font-size: 16px;
+ padding: 5px;
+ text-decoration: none; }
+/*顶部*/
+.top{
+  width: 1003px;
+  height: 100px;
+  background-color: darkred;
+}
+.top h1{
+  font-size: 60px;
+  text-align: center;
+  padding-top: 10px;
+}
+/*指导思想*/
+.guide h1{
+  margin-top: 30px;
+  font-size: 40px;
+}
+.guide li{
+  font-size: 30px;
+  margin-top: 20px;
+}
+a:hover{
+color:#ff0000;
+text-decoration:underline;
+}
+/*党和国家领导人著作*/
+.dang{
+  margin-top: 20px;
+}
+.dang h1{
+  font-size: 40px;
+}
+.dang img{
+  width: 300px;
+  height: 400px;
+
+}
+.dang p{
+  font-size: 20px;
+  margin-left: 100px;
+}
+/*著作1*/
+.zhuzuo1{
+  margin-left: 320px;
+  margin-top: -2190px;
+}
+.zhuzuo1 li{
+  font-size: 30px;
+  margin-top: 40px;
+
+}
+.zhuzuo2{
+  margin-left: 320px;
+  margin-top: 70px;
+}
+.zhuzuo2 li{
+  font-size: 30px;
+  margin-top: 40px;
+}
+.zhuzuo3{
+  margin-left: 320px;
+  margin-top: 150px;
+}
+.zhuzuo3 li{
+  font-size: 30px;
+  margin-top: 40px;
+}
+.zhuzuo4{
+  margin-left: 320px;
+  margin-top: 150px;
+}
+.zhuzuo4 li{
+  font-size: 30px;
+  margin-top: 40px;
+}
+.zhuzuo5{
+margin-left: 290px;
+  margin-top: 150px;
+}
+.zhuzuo5 li{
+  font-size: 30px;
+  margin-top: 40px;
+}
+/*轮播图*/
+.lun1{
+  width: 570px;
+  height: 380px;
+  float: right;
+  margin: 30px auto;
+  position: relative;
+  margin-top: -2500px;
+}
+.imgs1 li{
+  list-style-type:none ;
+  position: relative;
+}
+.imgs1  img{
+  position: absolute;
+  width: 570px;
+  height: 380px;
+  top: 0;
+  left: 0;
+}
+
+.current1{
+  color: red ! important;
+  background-color: #fff ! important;
+}
+.fir{
+  z-index: 99;;
+}
+.lun2{
+  width: 300px;
+  height: 400px;
+  float: right;
+  margin: 30px auto;
+  position: relative;
+  margin-top: -2000px;
+}
+.imgs2 li{
+  list-style-type:none ;
+  position: relative;
+}
+.imgs2  img{
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+.current2{
+  color: red ! important;
+  background-color: #fff ! important;
+}
+
+.deng3{
+   width: 300px;
+  height: 400px;
+  float: right;
+  margin: 30px auto;
+  position: relative;
+  margin-top: -1575px;
+}
+.deng3  img{
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+
+.lun4{
+  width: 300px;
+  height: 400px;
+  float: right;
+  margin: 30px auto;
+  position: relative;
+  margin-top: -1142px;
+}
+.imgs4 li{
+  list-style-type:none ;
+  position: relative;
+}
+.imgs4  img{
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+.current4{
+  color: red ! important;
+  background-color: #fff ! important;
+}
+
+.hu5{
+   width: 300px;
+  height: 400px;
+  float: right;
+  margin: 30px auto;
+  position: relative;
+  margin-top: -730px;
+}
+.hu5  img{
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+
+.lun6{
+  width: 270px;
+  height: 400px;
+  float: right;
+  margin: 30px auto;
+  position: relative;
+  margin-top: -285px;
+}
+.imgs6 li{
+  list-style-type:none ;
+  position: relative;
+}
+.imgs6  img{
+  position: absolute;
+  width: 270px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+.current6{
+  color: red ! important;
+  background-color: #fff ! important;
+}
+/*分割线*/
+.line{
+  margin-top: 10px;
+  height: 20px;
+  border-top: 10px solid #ff0000;
+  text-align: center;}
+
+  .classics h1{
+  margin-top: 170px;
+  text-align: center;
+  font-size: 40px;
+}
+.jingdian li{
+display:inline ;
+font-size: 40px;
+  margin-top: 20px;
+  margin-left: 140px;
+}
+/* 底部 */
+.footer {
+  margin-top: 40px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 20px;
+  height: 120px;
+}
+.i1{
+  width: 46px;
+  height: 46px;
+}
+.i1 img{
+  width: 120px;
+  height: 120px;
+  margin-left: 150px;
+}
+.x1{
+
+}
+.footer li{
+  list-style-type: none;
+  display: inline;
+
+}
+.footer li span{
+  padding-left: 20px;
+}

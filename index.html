@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="css/index.css">
+<script type="text/javascript">
+			$(document).ready(function(){
+				$(".container").mouseover(function(){
+					$(".left").show();
+					$(".right").show();
+					clearInterval(time);
+				});
+				$(".container").mouseout(function(){
+					$(".left").hide();
+					$(".right").hide();
+					time=setInterval(function(){
+						ck("right");
+					},3000);
+				});
+				$(".left").click(function(){
+					ck("left");
+				});
+				$(".right").click(function(){
+					ck("right");
+				});
+				var time=setInterval(function(){
+					ck("right");
+				},3000);
+				function ck(fg){
+				var index;
+				for(var i=0;i<$(".list li").length;i++){
+				if($(".list li").eq(i).hasClass("current")){
+					index=i;
+					$(".list li").eq(i).removeClass("current");
+					$(".imgs img").eq(i).removeClass("fir");
+				}
+				}
+				if(fg=="left"){
+					if(index>=1){
+						index--;
+					}else{
+						index=$(".list li").length-1;
+					}
+					}else{
+					if(index<$(".list li").length-1){
+						index++;
+					}else{
+						index=0;
+					}
+					}
+					$(".list li").eq(index).addClass("current");
+					$(".imgs img").eq(index).addClass("fir");
+				}
+			
+			});
+		</script>
+		<script>
+    $(function(){
+        $('#goToTop a').click(function(){
+            $('html , body').animate({scrollTop: 0},'slow');
+        });
+    });
+    </script>
+</head>
+<body>
+	<div class="entirety">
+		<div id="goToTop"><a href="javascript:;">回顶部</a></div>
+ <header style="background-image: url(images/header.jpg);";>
+            <div class="clearfix row" style="width: 1003px;height:100px;">
+                <div class="col-lg-6 col-md-6 col-sm-4" style="float:left;">
+                	<li style="font-family: 楷体;font-size: 40px; color: white;">　　喜迎二十大</li></br>
+                	<li style="font-family: 楷体;font-size: 40px; color: white;">　　　　　　　绿色满校园</li>
+                </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-6 col-md-6 col-sm-6" style="float:left;">
+                            <form class="search" style="margin-top: 30px;margin-left: 180px;">
+                                <input type="text" placeholder="搜索" name="search">
+                                <button>
+                                <input type="button" class="input_btn" name="搜索" value="搜索">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+ </header>
+<div id="nav">
+	<div class="nav-items">
+		<ul class="nav-items">
+			<li><a href="index.html"><b>首页</b></a></li>
+			<li><a href="lsxy.html"><b>绿色校园</b></a></li>
+			<li><a href="sjx.html"><b>党的历史</b></a></li>
+			<li><a href="20.html"><b>党的二十大</b></a></li>
+			<li><a href="party.html"><b>党章</b></a></li>
+			<li><a href="movie.html"><b>红色电影</b></a></li>
+			<li><a href="theory.html"><b>思想理论</b></a></li>
+			<li><a href="excellent.html"><b>优秀典范</b></a></li>
+		</ul>
+	</div>
+</div>
+<div  class="container">
+	<div class="list">
+		<ul>
+		<li class="current">1</li>
+		<li>2</li>
+		<li>3</li>
+		</ul>
+	</div>
+	<div class="left"><</div>
+			<div class="right">></div>
+			<div class="imgs">
+				<li><a href="https://export.shobserver.com/baijiahao/html/461719.html" target=_blank>
+                	<img src="images/lun1.jpg" alt="" class="fir">	
+                </a></li>
+				<li><a href="https://baijiahao.baidu.com/s?id=1726874056289031956&wfr=spider&for=pc" target=_blank>
+                    <img src="images/lun2.jpg" alt="">
+                </a></li>
+				 <li><a href="https://page.om.qq.com/page/OUYTj6QHXmpeJag2-BY8pWWg0" target=_blank>
+                     <img src="images/lun3.jpg" alt="">
+                 </a></li>
+			</div>
+</div>
+
+
+<div class="section">
+<li>
+<a href="https://export.shobserver.com/baijiahao/html/461719.html" target=_blank>
+<h1><font color="#ff0000">二十大代表人选推荐提名工作</font></h>
+<p>
+中央和国家机关各部门基本完成出席党的二十大代表人选推荐提名工作。
+</p>
+</a>
+</li>
+<li>
+<a href="https://baijiahao.baidu.com/s?id=1726874056289031956&wfr=spider&for=pc" target=_blank>
+<h1><font color="#ff0000">以高质量发展迎接党的二十大</font></h>
+<p>
+坚持以经济建设为中心，做好2022年经济工作，推动经济实现质的稳步提升和量的合理增长，不仅对于实现“十四五”规划和2035年远景目标具有重要意义，而且对于2022年下半年召开的党的二十大也具有特殊意义。
+</p>
+</a>
+</li>
+<li>
+<a href="https://mp.weixin.qq.com/s/Ki08Ct7U-5qPagbdFbTCpw" target="_blank">
+<h1><font color="#ff0000">创建绿色学校，共建文明校园</font></h>
+<p>
+绿色学校是指学校在实现其基本教育功能的基础上，还可以持续发展理论为导向，在日常工作中将可持续发展思想全面纳入管理中。
+</p>
+</a>
+</li>
+</div>
+	
+	<div class="line"></div>
+<div class="section2">
+<li>
+<a href="https://baike.baidu.com/item/%E7%BB%BF%E6%B0%B4%E9%9D%92%E5%B1%B1%E5%B0%B1%E6%98%AF%E9%87%91%E5%B1%B1%E9%93%B6%E5%B1%B1/18349519?fr=aladdin" target=_blank>
+<h1><font color="#ff0000">绿水青山就是金山银山</font></h>
+<p>
+“绿水青山就是金山银山”是时任浙江省委书记习近平于2005年8月在浙江湖州安吉考察时提出的科学论断。
+</p>
+</a>
+</li>
+<li>
+<a href="https://baike.baidu.com/item/%E7%A7%91%E5%AD%A6%E5%8F%91%E5%B1%95%E8%A7%82/317422?fr=aladdin" target=_blank>
+<h1><font color="#ff0000">科学发展观</font></h>
+<p>
+中共中央总书记胡锦涛在2003年7月28日的讲话中提出“坚持以人为本，树立全面、协调、可持续的发展观，促进经济社会和人的全面发展”，按照“统筹城乡发展、统筹区域发展、统筹经济社会发展、统筹人与自然和谐发展、统筹国内发展和对外开放”的要求推进各项事业的改革和发展的方法论--科学发展观，也是中国共产党的重大战略思想。
+</p>
+</a>
+</li>
+<li>
+<a href="https://baike.baidu.com/item/%E4%BA%BA%E7%B1%BB%E5%91%BD%E8%BF%90%E5%85%B1%E5%90%8C%E4%BD%93/1096715?fr=aladdin" target="_blank">
+<h1><font color="#ff0000">人类命运共同体</font></h>
+<p>
+人类命运共同体（a Community of Shared Future for Mankind）旨在追求本国利益时兼顾他国合理关切，在谋求本国发展中促进各国共同发展。  人类只有一个地球，各国共处一个世界，要倡导“人类命运共同体”意识。
+</p>
+</a>
+</li>
+</div>
+
+<div class="imgs2">
+	<li><a href="https://baike.baidu.com/item/%E7%BB%BF%E6%B0%B4%E9%9D%92%E5%B1%B1%E5%B0%B1%E6%98%AF%E9%87%91%E5%B1%B1%E9%93%B6%E5%B1%B1/18349519?fr=aladdin" target=_blank>
+                	<img src="images/index1.jpg" alt="">	
+    </a></li>
+</div>
+<div class="imgs3">
+<li><a href="https://baike.baidu.com/item/%E4%BA%BA%E7%B1%BB%E5%91%BD%E8%BF%90%E5%85%B1%E5%90%8C%E4%BD%93/1096715?fr=aladdin" target=_blank>
+                	<img src="images/index2.jpg" alt="">	
+    </a></li>
+</div>
+<div class="imgs4">
+<li>
+                	<img src="images/index3.jpg" alt="">	
+   </li>
+</div>
+<div class="section3">
+<li>
+<a href="https://baike.baidu.com/item/%E7%BB%BF%E8%89%B2%E6%A0%A1%E5%9B%AD" target="_blank">
+<h1><font color="#ff0000">绿色校园</font></h>
+<p>
+“绿色校园”是指在实现其基本教育功能的基础上，以可持续发展思想为指导，在学校全面的日常管理工作中纳入有益于环境的管理措施，并持续不断地改进，充分利用学校内外的一切资源和机会全面提高师生环境素养的学校。绿色校园是1996年《全国环境宣传教育行动纲要》中首次提出的.
+</p>
+</a>
+</li>
+</div>
+</div>
+
+<div class="footer">
+  <div class="i1">
+  	<li>
+  		<img src="images/pz.jpg">
+  	</li>
+  </div>
+  <div class="X2"> <li>
+  	<li><span>关于我们</span>
+  	<span>|</span>
+  	<span>联系我们</span>
+  	<span>|</span>
+  <span>素材来源于网络</span></li>
+  </div>
+</div>
+</div>
+</body>
+</html>
